@@ -57,4 +57,30 @@ func main() {
 	//返回子串在字符第一次出现的index，没有返回-1：
 	index := strings.Index("NLT_北abc_abc", "abc")
 	fmt.Println(index)
+
+	//返回子串在字符最后一次出现的index，没有返回-1：
+	index = strings.LastIndex("NLT_北abc_abc", "abc")
+	fmt.Println(index)
+
+	// 将指定子串替换成另外一个子串： strings.Repalce
+	fmt.Println(strings.Replace("123456!!!!", "!", "?", 2)) // -1代表全部换
+
+	// 按照指定的某个字符为分割标识，将一个字符串拆分出字符串数组
+	fmt.Println(strings.Split("hello,world,go", ","))
+
+	// 将字符串的字母进行大小写的转换
+	fmt.Println(strings.ToUpper("HelloWorld"))
+	fmt.Println(strings.ToLower("HelloWorld"))
+
+	// 将字符串左右两边的空格去掉
+	fmt.Println(strings.TrimSpace("  I have space "))
+
+	// 将字符串两边指定的字符串去掉
+	fmt.Println(strings.Trim("!  trim  ! ", " !"))
+	// 去掉左边/右边的字符  TrimLeft/TrimRight
+
+	// 判断字符串是否已指定的字符串开头/结尾
+	fmt.Println(strings.HasPrefix("http://www.baidu.com", "http"))
+	fmt.Println(strings.HasSuffix("http://www.baidu.com", ".com"))
+
 }
