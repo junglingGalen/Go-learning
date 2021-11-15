@@ -91,6 +91,31 @@ func guessGame() {
 	}
 }
 
+// func main() {
+// 	guessGame()
+// }
+
+// 从1990.1.1开始实施三天打鱼两天晒网，如何判断某一天是“打鱼”还是“筛网”
+// func primeNum() {
+// 	fmt.Println("请按照2006/01/02 15:04:05格式输入时间：")
+// 	var inputTime string
+// 	fmt.Scanln(&inputTime)
+// 	startTime, err := time.Parse("2006/01/02 15:04:05", "1990/01/01 00:00:00")
+// 	endTime, err2 := time.Parse("2006/01/02 15:04:05", inputTime)
+// 	var duration = startTime - endTime
+// 	fmt.Println(duration)
+// }
+
+// func main() {
+// 	primeNum()
+// }
+
+func print() {
+	for i := 97; i <= 97+51; i++ {
+		fmt.Printf("%c", i)
+	}
+}
+
 func main() {
-	guessGame()
+	print()
 }
