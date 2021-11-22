@@ -59,7 +59,7 @@ func array3() {
 func array04() {
 	var numArr01 [3]int = [3]int{1, 2, 3}
 	var numArr02 = [3]int{1, 2, 3}
-	var numArr03 = [...]int{8, 9, 10}
+	numArr03 := [...]int{8, 9, 10}
 	var numArr04 = [...]int{1: 100, 0: 900, 3:253}  // 未填充的下标为默认值
 	fmt.Println(numArr01, numArr02, numArr03, numArr04)
 }

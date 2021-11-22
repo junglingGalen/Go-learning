@@ -131,10 +131,18 @@ func slice3() {
 
 func copslice() {
 	var slice4 []int = []int{1, 2, 3, 4, 5}
-	var slice5 []int = []int{10:0}
+	var slice5 []int = []int{2:100, 10:0}
 	fmt.Println("拷贝前：", slice4, slice5)
-	copy(slice5, slice4)
+	copy(slice5, slice4)  // slice5 = [1, 2, 3, 4, 5, 0, 0, 0, 0, 0]
 	fmt.Println("拷贝后：", slice4, slice5)
+	var slice6 []int = make([]int, 3)
+	i := copy(slice6, slice4)  // slice6 = [1, 2, 3]
+	fmt.Println("slice6:", slice6, i)
+	/*
+	① copy的数据类型是切片
+	② slice4 和 slice5 的数据空间是独立的，互不影响
+	③copy(slice5, slice4): 把slice4对应下表的元素赋值给slice5对应下标。若超出slice5现在长度，则超出部分不赋值
+	*/
 
 }
 
