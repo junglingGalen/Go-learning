@@ -77,7 +77,7 @@ func myStruct2() {
 	var p1 Person
 
 	// ② p2 := Person{}
-	p2 := Person{}
+	p2 := Person{"lili", 5}
 
 	// ③ var person *Person = new(Person)
 	var p3 *Person = new(Person)
