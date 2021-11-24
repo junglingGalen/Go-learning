@@ -85,6 +85,10 @@ func myStuct3() {
 	}
 	monster := Monster{"牛魔王", 500, "牛头拳"}
 
+	/*
+	将monster变量序列化为json格式字符串
+		json.Marshal函数中使用反射，这个讲解反射式再介绍
+	*/
 	jsonStr, err := json.Marshal(monster)  // monster小写字段无法在json包里运用，小写只能本包作用
 	if err != nil {
 		fmt.Println("json 处理错误", err)

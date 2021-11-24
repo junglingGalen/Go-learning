@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// 可变参数
 func sumAll(num... int) (sum int) {
 	for _, i := range num {
 		sum += i

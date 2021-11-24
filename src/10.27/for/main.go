@@ -17,7 +17,7 @@ func main() {
 
 	// 第二种遍历方式
 	str = "abc-ok上海"
-	for index, val := range str {
+	for index, val := range str {  // 按字符的方式遍历，但index返回的是字节位置
 		fmt.Printf("index=%d, value=%c \n", index, val)
 	}
 }

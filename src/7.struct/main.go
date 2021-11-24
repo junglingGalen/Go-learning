@@ -78,6 +78,10 @@ func myStruct2() {
 
 	// ② p2 := Person{}
 	p2 := Person{"lili", 5}
+	p21 := Person{
+		Name : "lili",
+		Age : 5,
+	}
 
 	// ③ var person *Person = new(Person)
 	var p3 *Person = new(Person)
@@ -91,7 +95,7 @@ func myStruct2() {
 	// ④ var person *Person = &Person{}
 	var p4 *Person = &Person{}
 
-	fmt.Println(p1, p2, *p3, *p4)
+	fmt.Println(p1, p2, p21, *p3, *p4)
 }
 
 func main() {

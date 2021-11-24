@@ -49,8 +49,8 @@ func getMax(arr [25]int) (max int, index int) {
 (3)要求：随机生成5个数，并将其反转打印。
 */
 func randomArr() {
-	// rand.Seed(time.Now().UnixNano() + int64(1))
-	time.Now().UnixNano()
+	// 如果没有初始化rand，同一个rand每次生成的随机数也是不同的，只是每次运行相同位随机数都是一样的
+	rand.Seed(time.Now().UnixNano() + int64(1))
 	var arr [5]int
 	for i := 0; i < 5; i++ {
 		arr[i] = rand.Intn(100) + 1
@@ -61,11 +61,6 @@ func randomArr() {
 	}
 }
 
-func main() {
-	randomArr()
-}
-
-/*
-数组的复杂运用
-*/
-// 1.翻转
+// func main() {
+// 	randomArr()
+// }

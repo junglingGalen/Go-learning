@@ -47,7 +47,7 @@ func main() {
 	var b float64 = 100.0
 	var c float64 = 60.0
 	m := 2 * b - 4 * a * c
-	if m > 0{
+	if m > 0 {
 		x1 := (-b + math.Sqrt(2 * b - 4 * a *c)) / (2 * a)
 		x2 := (-b - math.Sqrt(2 * b - 4 * a *c)) / (2 * a)
 		fmt.Printf("该算数式有解%v和%v", x1, x2)

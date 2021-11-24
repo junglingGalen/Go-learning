@@ -13,6 +13,4 @@ func main() {
 	} else {
 		fmt.Printf("happy吧，你还小！")
 	}
-
-	
 }
