@@ -1,0 +1,29 @@
+# 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go 构建缓存和依赖
+vendor/
+go.sum
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量 / 敏感信息
+.env
+.env.*
+*.pem
+*.key
