@@ -40,9 +40,10 @@ func (a Arr) T() [3][3]int {
 	return temArr
 }
 
-func main(){
+func main_(){
 	var arr1 = [3][3]int{[3]int{1, 2, 3}, [3]int{4, 5, 6}}
 	arr2 := Arr(arr1)
 	fmt.Println(arr2.T())
 }
+
 
